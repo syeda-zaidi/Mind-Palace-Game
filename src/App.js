@@ -1,11 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Nav from "./components/Nav";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <Nav />
+    <div>
+
+      <Nav />
+  
+      <Footer />
+    
+
+    </div>
   );
 }
 
