@@ -2,39 +2,39 @@
     {
         "id": 1,
         "name": "sherlock",
-        "image": "/public/images/sherlock.jpg"
+        "image": "./images/sherlock.jpg"
     },
     {
         "id": 2,
         "name": "watson",
-        "image": "/public/images/watson.png"
+        "image": "./images/watson.png"
     },{
         "id": 3,
         "name": "mycroft",
-        "image": "/public/images/mycroft.jpg"
+        "image": "./images/mycroft.jpg"
     },{
         "id": 4,
         "name": "molly",
-        "image": "/public/images/mollyHooper.jpg"
+        "image": "./images/mollyHooper.jpg"
     },{
         "id": 5,
         "name": "marie",
-        "image": "/public/images/marie.jpg"
+        "image": "./images/marie.jpg"
     },{
         "id": 6,
         "name": "lestrade",
-        "image": "/public/images/inspectorLestrade.jpg"
+        "image": "./images/inspectorLestrade.jpg"
     },{
         "id": 7,
         "name": "mrshudson",
-        "image": "/public/images/mrsHudson.png"
+        "image": "./images/mrsHudson.png"
     },{
         "id": 8,
         "name": "moriarty",
-        "image": "/public/images/moriarty.jpg"
+        "image": "./images/moriarty.jpg"
     },{
         "id": 9,
         "name": "ireneadler",
-        "image": "/public/images/ireneAdler.jpg"
+        "image": "./images/ireneAdler.jpg"
     }
 ]
