@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../Nav";
 import Cards from "../cards";
 import Cast from "../../cast.json";
+import Footer from "../footer";
 import "./style.css";
 
 
@@ -16,7 +17,7 @@ class Game extends React.Component {
         Cast,
         score,
         topScore,
-        message 
+        message
     };
 
     componentDidMount() {
@@ -28,7 +29,7 @@ class Game extends React.Component {
 
     setClicked = id => {
         const Cast = this.state.Cast;
-        const cardClicked = Cast.filter(Cast => Cast.id === id ); //whats happening here
+        const cardClicked = Cast.filter(Cast => Cast.id === id);
 
         if (cardClicked[0].clicked) {
 
@@ -53,27 +54,27 @@ class Game extends React.Component {
                 score = 0;
                 topScore = 0;
                 this.setState({ topScore })
-             
+
 
                 //reset all card to unclicked 
-                for (let i =0; i < Cast.length; i++ ) {
+                for (let i = 0; i < Cast.length; i++) {
                     Cast[i].clicked = false;
-                } 
+                }
             } else {
-                score = score + 1 ;
+                score = score + 1;
                 message = "You choose good, keep clicking !";
 
                 if (score > topScore) {
                     topScore = score;
-                    this.setState ({ topScore });
+                    this.setState({ topScore });
 
                 }
             }
 
-            Cast.sort( () => {
+            Cast.sort(() => {
                 return 0.5 - Math.random()
             });
-            this.setState({ Cast }); 
+            this.setState({ Cast });
             this.setState({ message });
             this.setState({ score });
         }
@@ -83,13 +84,14 @@ class Game extends React.Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-12">
-                        <Nav score={this.state.score} topScore={this.state.topScore}
-                            message={this.state.message} />
-                    </div>
+
+                    <Nav score={this.state.score} topScore={this.state.topScore}
+                        message={this.state.message} />
+
                 </div>
 
                 <div className="row gameBoard">
+
                     {this.state.Cast.map(Cast => (
                         <Cards
                             setClicked={this.setClicked}
@@ -99,6 +101,10 @@ class Game extends React.Component {
                             image={Cast.image}
                         />
                     ))}
+
+                </div >
+                <div className="row">
+                    <Footer />
                 </div>
             </div>
         )

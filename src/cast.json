@@ -7,11 +7,11 @@
     {
         "id": 2,
         "name": "watson",
-        "image": "./images/watson.png"
+        "image": "./images/dr-watson.jpg"
     },{
         "id": 3,
         "name": "mycroft",
-        "image": "./images/mycroft.jpg"
+        "image": "./images/mycroft-john.jpg"
     },{
         "id": 4,
         "name": "molly",
@@ -20,7 +20,7 @@
     {
         "id": 5,
         "name": "marie",
-        "image": "./images/marie.jpg"
+        "image": "./images/Mary_Morstan.jpg"
     },{
         "id": 6,
         "name": "lestrade",
@@ -28,11 +28,11 @@
     },{
         "id": 7,
         "name": "mrshudson",
-        "image": "./images/mrsHudson.png"
+        "image": "./images/sherlock_mrshudson.jpg"
     },{
         "id": 8,
         "name": "moriarty",
-        "image": "./images/moriarty.jpg"
+        "image": "./images/MoriartyProfile1.png"
     }
 ]
 
