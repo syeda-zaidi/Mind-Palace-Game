@@ -16,7 +16,8 @@
         "id": 4,
         "name": "molly",
         "image": "./images/mollyHooper.jpg"
-    },{
+    },
+    {
         "id": 5,
         "name": "marie",
         "image": "./images/marie.jpg"
@@ -32,9 +33,7 @@
         "id": 8,
         "name": "moriarty",
         "image": "./images/moriarty.jpg"
-    },{
-        "id": 9,
-        "name": "ireneadler",
-        "image": "./images/ireneAdler.jpg"
     }
 ]
+
+    
